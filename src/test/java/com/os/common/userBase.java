@@ -16,6 +16,7 @@ public class userBase {
 		driver.get(baseURL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+
 	}
 	public void CloseBrowser() {
 		driver.close();
