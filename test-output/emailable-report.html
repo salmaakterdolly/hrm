@@ -9,27 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite1</th></tr>
-<tr><td><a href="#t0">Nopackage</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">1,432</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Nopackage</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,874</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Nopackage &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">com.os.testRunner.testNGtestRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1547700245685</td><td rowspan="1">1111</td></tr><tr class="failedeven"><td><a href="#m1">tearDownClass</a></td><td rowspan="1">1547700246967</td><td rowspan="1">0</td></tr><tr><th colspan="4">Nopackage &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.os.testRunner.testNGtestRunner</td><td><a href="#m2">feature</a></td><td rowspan="1">1547700246912</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Nopackage &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.os.testRunner.testNGtestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1547736550978</td><td rowspan="1">818</td></tr></tbody>
 </table>
-<h2>Nopackage</h2><h3 id="m0">com.os.testRunner.testNGtestRunner#setUpClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: You&apos;re not allowed to extend classes that define Step Definitions or hooks. class com.os.steps.Admin extends class com.os.steps.Login
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:63)
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:41)
-	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:86)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:92)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:70)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:66)
-	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:42)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:16)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.os.testRunner.testNGtestRunner#tearDownClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at cucumber.api.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:34)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.os.testRunner.testNGtestRunner#feature</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException
+<h2>Nopackage</h2><h3 id="m0">com.os.testRunner.testNGtestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>as a site visitor</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: java.lang.NullPointerException
-	at cucumber.api.testng.AbstractTestNGCucumberTests.features(AbstractTestNGCucumberTests.java:29)
-	... 22 more
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:66)
+	at com.os.steps.Admin.i_clicked_on_admin(Admin.java:42)
+	at ✽.When i clicked on admin(admin.feature:7)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
