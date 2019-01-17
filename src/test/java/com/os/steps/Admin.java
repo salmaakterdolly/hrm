@@ -1,6 +1,10 @@
 package com.os.steps;
 
+
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import com.os.common.userBase;
 
@@ -23,14 +27,22 @@ public class Admin extends userBase{
 	}//end of After hooks
 	
 	
+	
+
 	@Given("^as a user i am on admin page$")
 	public void as_a_user_i_am_on_admin_page() throws Throwable {
-	  launchBrowser();
+	  
 	}
 
 	@When("^i clicked on admin$")
 	public void i_clicked_on_admin() throws Throwable {
-	 // driver.findElement(By.id("manu_admin_UserManagment")).click();
+	Actions action = new Actions(driver);
+	WebElement we = driver.findElement(By.xpath("/index.php/admin/viewAdminModule"));
+	action.moveToElement(we).moveToElement(driver.findElement(By.xpath("/index.php/admin/viewAdminModule"))).click().build().perform();
+   
+    
+    
+	
 	}
 
 	@When("^i clicked on user managment$")
