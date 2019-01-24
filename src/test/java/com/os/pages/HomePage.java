@@ -27,5 +27,13 @@ public class HomePage {
 	public WebElement password() {
 		return admin123;
 	}
+   //@FindBy (xpath="//*[@class='quickLinkText' and contains(text(),'Leave List')]");
+   WebElement Leave;
 
+
+public WebElement getLeave() {
+	return Leave;
+}
+   
+   
 }

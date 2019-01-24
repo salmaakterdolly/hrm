@@ -6,8 +6,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 		features = {"Features"},
 		glue = {"com.os.steps"},
-		tags  = {"@Admin"}
-        
+		tags = {"@Salma"}
+		
 
 )
 

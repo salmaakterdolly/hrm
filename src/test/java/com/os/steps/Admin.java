@@ -7,12 +7,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import com.os.common.userBase;
-
-//import com.os.common.userBase;
 
 //import cucumber.api.java.After;
 //import cucumber.api.java.Before;
@@ -42,27 +40,27 @@ public class Admin extends userBase {
 	@When("^i clicked on admin$")
 	public void i_clicked_on_admin() throws Throwable {
 	Actions action = new Actions(driver);
-	WebElement we = driver.findElement(By.id("firstLevelMenu"));
-    action.moveToElement(we).moveToElement(driver.findElement(By.id("firstLevelMenu"))).click().build().perform();
+	WebElement we = driver.findElement(By.id("menu_admin_viewAdminModule"));
+    action.moveToElement(we).moveToElement(driver.findElement(By.id("menu_admin_UserManagement"))).click().build().perform();
    
     
     
 	
 	}
 
-	@When("^i clicked on user managment$")
-	public void i_clicked_on_user_managment() throws Throwable {
+	//@When("^i clicked on user managment$")
+	//public void i_clicked_on_user_managment() throws Throwable {
 	  
-	}
+	//}
 
-	@When("^i clicked on user$")
-	public void i_clicked_on_user() throws Throwable {
+	//@When("^i clicked on user$")
+	//public void i_clicked_on_user() throws Throwable {
 	 
-	}
+	//}
 
-	@Then("^i saw an error occured$")
-	public void i_saw_an_error_occured() throws Throwable {
+	//@Then("^i saw an error occured$")
+	//public void i_saw_an_error_occured() throws Throwable {
 	   
-	}
+	//}
 
 }

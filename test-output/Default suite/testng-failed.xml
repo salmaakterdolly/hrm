@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.os.testRunner.testNGtestRunner">
+      <class name="com.os.common.DropDown">
         <methods>
-          <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="dropDown"/>
         </methods>
-      </class> <!-- com.os.testRunner.testNGtestRunner -->
+      </class> <!-- com.os.common.DropDown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
